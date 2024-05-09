@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Single Page Website</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #E6EAF8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #main-div {
+        width: 50%;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #div1, #div2 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #div1 {
+        width: 40%;
+        text-align: left;
+    }
+    #div2 {
+        width: 40%;
+        text-align: right;
+    }
+    h1 {
+        font-weight: bold;
+        margin: 0;
+    }
+    input[type="search"] {
+        border: 1px solid #E0E4F1;
+        border-radius: 5px;
+        padding: 10px 0 10px 20px; /* Adjusted padding */
+        width: 250px;
+    }
+    .search-container {
+        position: relative;
+    }
+    .search-loop {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #7D808D;
+    }
+    .nav-tabs {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display:flex;
+        width: 30vw;
+    }
+    .nav-item {
+        display: inline-block;
+        padding: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 15%;
+        text-align: center;
+    }
+    .nav-item.active {
+        background-color: #849FFF;
+        color: white;
+    }
+    /* Additional styles */
+    #divB {
+        margin-top: 20px;
+    }
+    .card {
+        width: calc(25% - 20px); /* Adjusted width */
+        margin-right: 20px; /* Adjusted margin */
+        display: inline-block;
+        vertical-align: top;
+        background-color: #FBFCFF;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card h2 {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .location {
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .tags {
+        display: inline-block;
+        background-color: white;
+        color: #627CD8;
+        border: 1px solid #627CD8;
+        border-radius: 20%;
+        padding: 2px 5px;
+        font-size: 8px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .shadow-effect {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+</style>
+</head>
+<body>
+<div id="main-div">
+    <div id="div1">
+        <div>
+            <h1>Users</h1>
+        </div>
+        <div class="search-container">
+            <span class="search-loop">&#128269;</span>
+            <input type="search" placeholder="Search Users">
+        </div>
+    </div>
+    <div id="div2">
+        <ul class="nav-tabs">
+            <li class="nav-item">Reputation</li>
+            <li class="nav-item active">New Users</li>
+            <li class="nav-item">Voters</li>
+            <li class="nav-item">Editors</li>
+            <li class="nav-item">Moderators</li>
+        </ul>
+    </div>
+    <!-- Additional content -->
+    <div id="divB">
+        <div id="div3">
+            <div class="card">
+                <div class="profile-picture"><img src="profile1.jpg" alt="Profile Picture"></div>
+                <h2>Lelah Nichols</h2>
+                <div class="location">Troy, MI</div>
+                <span class="tags">clothes</span>
+                <span class="tags">stem</span>
+            </div>
+            <div class="card">
+                <div class="profile-picture"><img src="profile2.jpg" alt="Profile Picture"></div>
+                <h2>Jesus Weiss</h2>
+                <div class="location">Forth Worth, TX</div>
+                <span class="tags">headset</span>
+                <span class="tags">gadget</span>
+                <span class="tags">speed</span>
+                <span class="tags">winter</span>
+            </div>
+            <div class="card shadow-effect">
+                <div class="profile-picture"><img src="profile3.jpg" alt="Profile Picture"></div>
+                <h2>Annie Rice</h2>
+                <div class="location">Austin, TX</div>
+                <span class="tags">road</span>
+                <span class="tags">mountain</span>
+                <span class="tags">trio</span>
+                <span class="tags">erath</span>
+                <span class="tags">nature</span>
+            </div>
+        </div>
+        <div id="div4">
+            <div class="card">
+                <div class="profile-picture"><img src="profile4.jpg" alt="Profile Picture"></div>
+                <h2>Robert Brower</h2>
+                <div class="location">Cincinnati, OH</div>
+                <span class="tags">maintenance</span>
+                <span class="tags">gears</span>
+                <span class="tags">frames</span>
+                <span class="tags">repair</span>
+            </div>
+            <div class="card">
+                <div class="profile-picture"><img src="profile5.jpg" alt="Profile Picture"></div>
+                <h2>Amy Campbell</h2>
+                <div class="location">Warrior, AL</div>
+                <span class="tags">music</span>
+                <span class="tags">disks</span>
+            </div>
+            <div class="card">
+                <div class="profile-picture"><img src="profile6.jpg" alt="Profile Picture"></div>
+                <h2>Antony S. Morin</h2>
+                <div class="location">Lyndhurst, NJ</div>
+                <span class="tags">vintage</span>
+                <span class="tags">electric</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
